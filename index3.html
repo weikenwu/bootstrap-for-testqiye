@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<title>路径分页徽章组件</title>
+
+<body style="margin:100px;">
+
+<ol class="breadcrumb">
+	<li><a href="#">首页</a></li>
+	<li><a href="#">产品列表</a></li>
+	<li class="active">匹克篮球鞋E70771H</li>
+</ol>
+
+<ul class="pagination">
+	<li><a href="#">&laquo;</a></li>
+	<li class="active"><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li class="disabled"><a href="#">5</a></li>
+	<li><a href="#">&raquo;</a></li>
+</ul>
+
+<!-- <div class="alert alert-success" style="margin: 0 100px;">
+	我是一个成功的警告框！
+	<button class="close" data-dismiss="alert"><span>&times;</span></button>
+</div> -->
+
+<ul class="list-group">
+	<li class="list-group-item">1.这是第1页</li>
+	<li class="list-group-item">2.这是第2页 <span class="badge">11</span></li>
+	<li class="list-group-item">3.这是第3页</li>
+	<li class="list-group-item">4.这是第4页</li>
+</ul>
+
+<div class="panel panel-danger">
+	<div class="panel-heading">
+		<h3 class="panel-title">我是标题区域</h3>
+	</div>
+	<div class="panel-body">
+		我是面板容器
+	</div>
+	<div class="panel-footer">
+		我是底部
+	</div>
+</div>
+
+<div class="modal" id="myModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal"><span>&times;</span></button>
+				<h4 class="modal-title">会员登录</h4>
+			</div>
+		
+		<div class="modal-body">
+			<p>暂时无法注册</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-default">注册</button>
+			<button class="btn btn-primary">登录</button>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" href="content.html">点击弹窗</button> -->
+<button class="btn btn-primary btn-lg" id="btn">点击弹窗</button>
+
+ <script src="js/jquery.min.js"></script>	
+ <script src="js/bootstrap.min.js"></script>
+
+ <script type="text/javascript">
+ 	$('#btn').on('click',function(){
+ 		$('#myModal').modal('show');
+ 	});
+ </script>
+ 
+</body>
+</html>
